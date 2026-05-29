@@ -1,66 +1,77 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import type { Metadata } from "next";
+import { CategoryCards } from "@/components/home/CategoryCards";
+import { HeroSection } from "@/components/home/HeroSection";
+import { SiteShell } from "@/components/layout/SiteShell";
+import { SectionCard } from "@/components/shared/SectionCard";
+import { Tag } from "@/components/shared/Tag";
+import { getHomeCategories, getSearchItems } from "@/data/site-content";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "AI Learning Guide — Roadmaps, Tools & Tutorials for the AI Era",
+  description:
+    "Learn AI from zero. Free roadmaps, hands-on tutorials, and practical tools for developers and non-technical learners navigating the AI era.",
+  alternates: {
+    canonical: "/",
+  },
+};
+
+/**
+ * 首页负责呈现站点定位、搜索入口与四大内容板块。
+ */
+export default function HomePage() {
+  const categories = getHomeCategories();
+  const searchItems = getSearchItems();
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <SiteShell>
+      <HeroSection
+        description="AI can feel overwhelming when every tutorial assumes you already know where to begin. This guide helps you choose a path, use AI tools intelligently, and turn curiosity into real momentum."
+        searchItems={searchItems}
+        title="Clear roadmaps, practical tools, and real first steps for learning AI."
+      />
+      <CategoryCards categories={categories} />
+      <section aria-label="Home highlights" className="section-grid">
+        <SectionCard>
+          <div className="section-card__header">
+            <p className="card-kicker">What makes this different</p>
+            <h2 className="card-title">Not theory-first. Action-first.</h2>
+          </div>
+          <div className="section-card__body">
+            <p className="section-copy">
+              Most AI content explains concepts before giving you a way to use them. This
+              site does the opposite: start with a job to do, a tool to learn, or a
+              project to build.
+            </p>
+            <div className="tag-row">
+              <Tag tone="accent">Roadmaps</Tag>
+              <Tag tone="cyan">Tools</Tag>
+              <Tag tone="muted">Projects</Tag>
+            </div>
+          </div>
+        </SectionCard>
+        <SectionCard>
+          <div className="section-card__header">
+            <p className="card-kicker">Who it serves</p>
+            <h2 className="card-title">Beginners, career switchers, and working professionals</h2>
+          </div>
+          <p className="section-copy">
+            Whether you want to code with AI, automate your workflow, build agents, or stay
+            employable in a changing market, the content is organized around outcomes instead
+            of hype.
           </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+        </SectionCard>
+        <SectionCard>
+          <div className="section-card__header">
+            <p className="card-kicker">How to use it</p>
+            <h2 className="card-title">Pick one lane and spend two focused weeks there</h2>
+          </div>
+          <ul className="stage-list">
+            <li className="stage-item">Choose one section that matches your current goal.</li>
+            <li className="stage-item">Follow one roadmap or tool stack instead of ten tabs.</li>
+            <li className="stage-item">Ship one visible output before expanding your scope.</li>
+          </ul>
+        </SectionCard>
+      </section>
+    </SiteShell>
   );
 }
