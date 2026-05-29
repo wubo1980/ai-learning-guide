@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   verification: {
-    google: "N21K5VoxWUyIIwGf5NZjvhvU2Ty_JC2EoVhMWPL-iro",
+    // google-site-verification will be added after obtaining domain-specific code
   },
   icons: {
     icon: "/favicon.svg",
