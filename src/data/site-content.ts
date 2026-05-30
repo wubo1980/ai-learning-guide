@@ -150,6 +150,13 @@ const searchItems: SearchItem[] = [
     category: "Career",
     keywords: ["job market", "skills", "portfolio", "freelance", "full-time"],
   },
+  {
+    label: "AI Learning Roadmap 2026",
+    href: "/career",
+    category: "Career",
+    keywords: ["learning roadmap", "ai engineer", "2026", "coursera", "mlops", "llmops", "agentic", "rag", "multimodal", "ai safety", "zero to ai engineer"],
+  },
+  },
 ];
 
 const codingRoadmaps: CodingRoadmap[] = [
@@ -430,6 +437,22 @@ const careerSections: CareerSection[] = [
       "Build proof of work in the form of templates, automations, or internal process improvements.",
       "Position yourself around outcomes, not around whether you can code.",
     ],
+  },
+  {
+    title: "2026 AI Learning Roadmap — From Zero to AI Engineer",
+    paragraphs: [
+      "Coursera's 2026 AI Learning Roadmap lays out a structured path from absolute beginner to working AI engineer. The curriculum is organized around five skill tiers: AI Foundations, Applied Machine Learning, LLM Engineering & RAG, Agentic Systems & MLOps, and AI Safety & Ethics. Each tier builds on the previous, with hands-on projects including a capstone agentic workflow system.",
+      "The hottest AI skills for 2026 reflect a shift from model-tinkering to production engineering. Agentic Workflow Orchestration leads the list — building systems where multiple AI agents collaborate, hand off context, and iterate toward goals autonomously. MLOps and LLMOps follow closely, as companies need people who can deploy, monitor, and maintain AI pipelines. Retrieval-Augmented Generation (RAG) remains essential for grounding AI outputs in real data. Multimodal AI (text + image + audio + video) is surging. And AI Safety — red-teaming, guardrails, evaluation — has become a first-class concern for production deployments.",
+      "For beginners starting from zero, a realistic 6-month plan looks like this: Month 1 — Python fundamentals and basic data manipulation. Month 2 — Machine learning concepts and hands-on with scikit-learn and simple neural networks. Month 3 — LLM basics: prompt engineering, embeddings, and building a first RAG application. Month 4 — Agent fundamentals: tool-use patterns, multi-step reasoning, and state management. Month 5 — MLOps essentials: deployment pipelines, monitoring, evaluation suites, and safety guardrails. Month 6 — Capstone project: build and deploy an end-to-end agentic workflow that demonstrates all five skill layers.",
+      "Notable courses on the 2026 roadmap include Coursera's 'AI for Everyone' (for broad orientation), DeepLearning.AI's 'Generative AI with LLMs' (for practical NLP), Stanford's 'CS224N' NLP course content (free online), and Anthropic's official Agent Cookbook (for production patterns). The key is to pick one platform, finish the sequence, and ship visible work rather than hopping between tutorials.",
+    ],
+    actionSteps: [
+      "Assess your current level honestly — are you at zero, intermediate, or already building? Choose the tier that matches.",
+      "Commit to one 6-month path (Coursera, Fast.ai, or self-directed) and finish before expanding.",
+      "Build one portfolio project per skill tier to demonstrate progression, not just completion.",
+      "Join an AI community — local meetup, Discord server, or study group — to stay accountable and find collaborators.",
+    ],
+  },
   },
 ];
 
