@@ -156,7 +156,6 @@ const searchItems: SearchItem[] = [
     category: "Career",
     keywords: ["learning roadmap", "ai engineer", "2026", "coursera", "mlops", "llmops", "agentic", "rag", "multimodal", "ai safety", "zero to ai engineer"],
   },
-  },
 ];
 
 const codingRoadmaps: CodingRoadmap[] = [
