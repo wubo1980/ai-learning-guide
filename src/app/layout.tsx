@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const inter = Inter({
@@ -45,9 +46,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  verification: {
-    // google-site-verification will be added after obtaining domain-specific code
-  },
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
@@ -69,7 +67,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${jetBrainsMono.variable}`}>
-      <body>{children}</body>
+      <body>{children}<Analytics mode="production" /></body>
     </html>
   );
 }
