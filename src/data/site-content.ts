@@ -110,7 +110,6 @@ const homeCategories: CategoryCardItem[] = [
       "Build a durable skill stack, choose meaningful projects, and navigate the AI job market with clarity.",
     icon: "career",
     highlight: ["Portfolio", "Skills", "Career pivot"],
-  },
 ];
 
 const searchItems: SearchItem[] = [
@@ -155,7 +154,6 @@ const searchItems: SearchItem[] = [
     href: "/career",
     category: "Career",
     keywords: ["learning roadmap", "ai engineer", "2026", "coursera", "mlops", "llmops", "agentic", "rag", "multimodal", "ai safety", "zero to ai engineer"],
-  },
 ];
 
 const codingRoadmaps: CodingRoadmap[] = [
@@ -197,7 +195,6 @@ const codingRoadmaps: CodingRoadmap[] = [
       "Week 4: Publish a polished portfolio-style site and document what you learned.",
     ],
     tools: ["Cursor", "v0", "Figma", "Vercel", "Chrome DevTools"],
-  },
 ];
 
 const everydayAiCategories: EverydayAiCategory[] = [
@@ -283,7 +280,6 @@ const everydayAiCategories: EverydayAiCategory[] = [
           "A quick environment for testing tiny tools, internal utilities, or experiments you want to deploy without local setup friction.",
       },
     ],
-  },
 ];
 
 const agentContent: AgentContent = {
@@ -451,8 +447,6 @@ const careerSections: CareerSection[] = [
       "Build one portfolio project per skill tier to demonstrate progression, not just completion.",
       "Join an AI community — local meetup, Discord server, or study group — to stay accountable and find collaborators.",
     ],
-  },
-  },
 ];
 
 /**
