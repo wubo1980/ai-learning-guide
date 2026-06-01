@@ -317,8 +317,7 @@ const agentContent: AgentContent = {
         "Handle latency, failure recovery, and observability.",
         "Ship something robust enough for repeated real-world use.",
       ],
-    },
-  ],
+],
   frameworks: [
     {
       name: "LangChain",
@@ -346,8 +345,7 @@ const agentContent: AgentContent = {
         "Strong when the problem is partly software engineering, not just chat.",
         "Helps bridge manual development with semi-autonomous execution.",
       ],
-    },
-  ],
+],
   resources: [
     {
       title: "Small workflow demo",
