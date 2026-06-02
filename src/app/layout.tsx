@@ -67,7 +67,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${jetBrainsMono.variable}`}>
-      <body>{children}<Analytics mode="production" /></body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
