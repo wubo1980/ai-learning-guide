@@ -3,6 +3,9 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
+import Script from "next/script";
+
+
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -68,6 +71,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${jetBrainsMono.variable}`}>
       <body>{children}<Analytics mode="production" /></body>
+        <Script src={"https://www.googletagmanager.com/gtag/js?id=G-3ZF137Q144"} strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag("js", new Date());
+            gtag("config", "G-3ZF137Q144");
+          `}
+        </Script>
     </html>
   );
 }
