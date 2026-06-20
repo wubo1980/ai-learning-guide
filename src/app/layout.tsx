@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "AI Learning Guide",
+    title: "AI Learning Guide: Roadmaps, Tools &amp; Tutorials 2026",
     description:
       "Practical AI roadmaps, tools, and tutorials for developers and non-technical learners navigating the AI era.",
     url: "/",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Learning Guide",
+    title: "AI Learning Guide: Roadmaps, Tools &amp; Tutorials 2026",
     description:
       "Practical AI roadmaps, tools, and tutorials for developers and non-technical learners navigating the AI era.",
   },
