@@ -70,8 +70,57 @@ export type CareerSection = {
   actionSteps: string[];
 };
 
+export type ArticleMeta = {
+  slug: string;
+  title: string;
+  description: string;
+  category: string;
+  date: string;
+  readTime: string;
+  difficulty: string;
+};
+
+const articleMetaList: ArticleMeta[] = [
+  {
+    slug: "no-code-vs-code-first",
+    title: "No-Code vs Code-First \u2014 Choosing Your AI Learning Path in 2026",
+    description: "Compare no-code AI tools, low-code frameworks, and code-first development. Find the path that fits your background, goals, and timeline.",
+    category: "Career & Learning",
+    date: "2026-06-22",
+    readTime: "12 min",
+    difficulty: "Beginner",
+  },
+  {
+    slug: "build-first-agent",
+    title: "Build Your First AI Agent in 2026 \u2014 A Step-by-Step Beginner\u2019s Guide",
+    description: "Build your first AI agent from scratch. This guide covers no-code platforms, low-code frameworks, and a simple Python agent \u2014 choose your level.",
+    category: "Agents",
+    date: "2026-06-22",
+    readTime: "15 min",
+    difficulty: "Beginner\u2013Intermediate",
+  },
+  {
+    slug: "portfolio-projects",
+    title: "5 AI Projects to Build for Your 2026 Portfolio (With Real Outcome Goals)",
+    description: "Ship AI projects that get you noticed. Five project ideas with tech stacks, difficulty levels, and the hiring signal each one sends.",
+    category: "Career & Learning",
+    date: "2026-06-22",
+    readTime: "10 min",
+    difficulty: "Beginner",
+  },
+];
+
+export function getArticleMetaList(): ArticleMeta[] {
+  return articleMetaList;
+}
+
+export function getArticleMeta(slug: string): ArticleMeta | undefined {
+  return articleMetaList.find((a) => a.slug === slug);
+}
+
 const navigationItems: NavigationItem[] = [
   { label: "Home", href: "/" },
+  { label: "Articles", href: "/articles" },
   { label: "Coding", href: "/coding" },
   { label: "Everyday AI", href: "/everyday-ai" },
   { label: "Agents", href: "/agents" },
@@ -155,6 +204,24 @@ const searchItems: SearchItem[] = [
     href: "/career",
     category: "Career",
     keywords: ["learning roadmap", "ai engineer", "2026", "coursera", "mlops", "llmops", "agentic", "rag", "multimodal", "ai safety", "zero to ai engineer"],
+  },
+  {
+    label: "No-Code vs Code-First AI Learning Path",
+    href: "/articles/no-code-vs-code-first",
+    category: "Career & Learning",
+    keywords: ["no-code ai", "code-first ai", "learn ai", "ai path", "beginner", "low-code", "ai agent no code"],
+  },
+  {
+    label: "Build Your First AI Agent Guide",
+    href: "/articles/build-first-agent",
+    category: "Agents",
+    keywords: ["build ai agent", "first agent", "agent tutorial", "step by step", "beginner agent", "no-code agent"],
+  },
+  {
+    label: "AI Portfolio Projects for 2026",
+    href: "/articles/portfolio-projects",
+    category: "Career & Learning",
+    keywords: ["portfolio projects", "ai projects", "beginner projects", "hireable", "2026", "project ideas"],
   },
 ];
 
