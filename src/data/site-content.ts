@@ -108,6 +108,25 @@ const articleMetaList: ArticleMeta[] = [
     readTime: "10 min",
     difficulty: "Beginner",
   },
+
+  {
+    slug: "prompt-engineering-guide",
+    title: "Prompt Engineering Guide — From Beginner to Advanced in 2026",
+    description: "Master prompt engineering with techniques for GPT-5, Claude 4, Gemini 2.5, and DeepSeek V4. From basic clarity principles to production-grade meta-prompting.",
+    category: "Career & Learning",
+    date: "2026-06-26",
+    readTime: "18 min",
+    difficulty: "Beginner–Advanced",
+  },
+  {
+    slug: "ai-model-comparison-2026",
+    title: "Best AI Model for Every Task in 2026 — GPT-5, Claude 4, Gemini 2.5, DeepSeek",
+    description: "Compare GPT-5, Claude 4 Opus, Gemini 2.5 Pro, and DeepSeek V4 Flash across writing, coding, analysis, creative, and research. Find the right model for your use case.",
+    category: "Career & Learning",
+    date: "2026-06-26",
+    readTime: "14 min",
+    difficulty: "Beginner",
+  },
 ];
 
 export function getArticleMetaList(): ArticleMeta[] {
@@ -222,6 +241,19 @@ const searchItems: SearchItem[] = [
     href: "/articles/portfolio-projects",
     category: "Career & Learning",
     keywords: ["portfolio projects", "ai projects", "beginner projects", "hireable", "2026", "project ideas"],
+  },
+
+  {
+    label: "Prompt Engineering Guide 2026",
+    href: "/articles/prompt-engineering-guide",
+    category: "Career & Learning",
+    keywords: ["prompt engineering", "how to write prompts", "prompt techniques", "prompt guide", "ai prompting"],
+  },
+  {
+    label: "AI Model Comparison 2026",
+    href: "/articles/ai-model-comparison-2026",
+    category: "Career & Learning",
+    keywords: ["gpt vs claude", "best ai model", "model comparison", "gpt-5", "claude 4", "gemini 2.5", "deepseek", "which ai model"],
   },
 ];
 
