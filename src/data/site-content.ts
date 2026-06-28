@@ -127,6 +127,33 @@ const articleMetaList: ArticleMeta[] = [
     readTime: "14 min",
     difficulty: "Beginner",
   },
+  {
+    slug: "desktop-agent-frameworks-2026",
+    title: "Desktop Agent in 2026 — Top Frameworks and Your First Demo",
+    description: "Compare OpenCoworker, Open Interpreter, and other desktop agent frameworks. Build your first AI agent demo that runs on your own machine.",
+    category: "Agents",
+    date: "2026-06-28",
+    readTime: "12 min",
+    difficulty: "Intermediate",
+  },
+  {
+    slug: "best-free-ai-courses-2026",
+    title: "Best Free AI Courses in 2026 — A Complete Guide to Learning Without Spending a Dollar",
+    description: "Discover the best free AI courses in 2026. Compare Coursera, DeepLearning.AI, Fast.ai, Google, and Stanford offerings. Start learning AI today at zero cost.",
+    category: "Career & Learning",
+    date: "2026-06-28",
+    readTime: "14 min",
+    difficulty: "Beginner",
+  },
+  {
+    slug: "ai-learning-roadmap-2026",
+    title: "The Complete AI Learning Roadmap for Beginners in 2026 (6-Month Plan)",
+    description: "A structured 6-month AI learning roadmap for beginners in 2026. From Python fundamentals to building and deploying agentic workflows. Free resources included.",
+    category: "Career & Learning",
+    date: "2026-06-28",
+    readTime: "16 min",
+    difficulty: "Beginner",
+  },
 ];
 
 export function getArticleMetaList(): ArticleMeta[] {
@@ -254,6 +281,18 @@ const searchItems: SearchItem[] = [
     href: "/articles/ai-model-comparison-2026",
     category: "Career & Learning",
     keywords: ["gpt vs claude", "best ai model", "model comparison", "gpt-5", "claude 4", "gemini 2.5", "deepseek", "which ai model"],
+  },
+  {
+    label: "Best Free AI Courses 2026",
+    href: "/articles/best-free-ai-courses-2026",
+    category: "Career & Learning",
+    keywords: ["free ai courses", "learn ai for free", "best ai courses", "ai certification free", "coursera ai", "deeplearning ai", "fast ai", "google ml crash course"],
+  },
+  {
+    label: "AI Learning Roadmap 2026",
+    href: "/articles/ai-learning-roadmap-2026",
+    category: "Career & Learning",
+    keywords: ["ai learning roadmap", "how to learn ai", "ai beginner guide", "6 month ai plan", "learn ai from scratch", "ai engineer path", "ai self study"],
   },
 ];
 
