@@ -180,7 +180,7 @@ export default function AILearningRoadmapPage() {
               <div className="tag-row">
                 <Tag tone="accent">{m.month}</Tag>
                 <Tag tone="muted">{m.duration}</Tag>
-                <Tag tone="default">{m.skillLevel}</Tag>
+                <Tag tone="muted">{m.skillLevel}</Tag>
               </div>
               <h2 className="card-title">{m.title}</h2>
             </div>

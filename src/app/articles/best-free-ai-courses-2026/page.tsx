@@ -170,10 +170,10 @@ export default function BestFreeAICoursesPage() {
           <SectionCard key={course.name}>
             <div className="section-card__header">
               <div className="tag-row">
-                <Tag tone="default">{course.platform}</Tag>
+                <Tag tone="muted">{course.platform}</Tag>
                 <Tag tone="accent">{course.level}</Tag>
                 <Tag tone="muted">{course.duration}</Tag>
-                {course.certificate && <Tag tone="highlight">Certificate</Tag>}
+                {course.certificate && <Tag tone="accent">Certificate</Tag>}
               </div>
               <h2 className="card-title">{course.name}</h2>
             </div>

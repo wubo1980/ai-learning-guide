@@ -169,7 +169,7 @@ export default function PromptEngineeringGuidePage() {
         {platformTips.map((platform) => (
           <SectionCard key={platform.platform}>
             <div className="section-card__header">
-              <Tag tone="default">{platform.platform}</Tag>
+              <Tag tone="muted">{platform.platform}</Tag>
               <h2 className="card-title">{platform.platform} Prompting Tips</h2>
             </div>
             <div className="section-card__body">

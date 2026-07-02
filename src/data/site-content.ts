@@ -154,6 +154,24 @@ const articleMetaList: ArticleMeta[] = [
     readTime: "16 min",
     difficulty: "Beginner",
   },
+  {
+    slug: "cursor-vs-copilot-2026",
+    title: "Cursor vs GitHub Copilot in 2026 — Which AI Coding Tool Is Right for Your Learning Path?",
+    description: "Stuck choosing between Cursor and Copilot in 2026? See how each AI coding tool fits your learning journey — from first commit to production agent. Feature comparison, pricing, and hands-on verdict.",
+    category: "Career & Learning",
+    date: "2026-07-02",
+    readTime: "12 min",
+    difficulty: "Beginner–Intermediate",
+  },
+  {
+    slug: "ai-jobs-2026-career-roadmap",
+    title: "AI Jobs in 2026 — Complete Career Roadmap for Technical and Non-Technical Professionals",
+    description: "AI careers in 2026 go beyond engineers. Explore the Builder vs Bridger roadmap — with real salaries, in-demand roles, and a 6-month action plan for technical and non-technical professionals.",
+    category: "Career & Learning",
+    date: "2026-07-02",
+    readTime: "14 min",
+    difficulty: "Beginner",
+  },
 ];
 
 export function getArticleMetaList(): ArticleMeta[] {
@@ -293,6 +311,18 @@ const searchItems: SearchItem[] = [
     href: "/articles/ai-learning-roadmap-2026",
     category: "Career & Learning",
     keywords: ["ai learning roadmap", "how to learn ai", "ai beginner guide", "6 month ai plan", "learn ai from scratch", "ai engineer path", "ai self study"],
+  },
+  {
+    label: "Cursor vs GitHub Copilot 2026",
+    href: "/articles/cursor-vs-copilot-2026",
+    category: "Career & Learning",
+    keywords: ["cursor vs copilot", "ai coding tool", "best ai code editor", "cursor ai", "github copilot", "ai coding assistant", "cursor vs copilot 2026"],
+  },
+  {
+    label: "AI Jobs and Career Roadmap 2026",
+    href: "/articles/ai-jobs-2026-career-roadmap",
+    category: "Career & Learning",
+    keywords: ["ai jobs", "ai career", "ai career roadmap", "ai jobs 2026", "ai salary", "ai careers non technical", "ai bridger", "ai builder", "ai job market"],
   },
 ];
 
