@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://ai-learning-guide.vercel.app/sitemap.xml",
+    sitemap: "https://learn-ai-guide.vercel.app/sitemap.xml",
   };
 }
