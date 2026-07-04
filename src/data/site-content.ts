@@ -172,6 +172,15 @@ const articleMetaList: ArticleMeta[] = [
     readTime: "14 min",
     difficulty: "Beginner",
   },
+  {
+    slug: "rag-vs-fine-tuning-2026",
+    title: "RAG vs Fine-Tuning in 2026 \u2014 When to Use Each and How to Get Started",
+    description: "RAG and fine-tuning serve different purposes. Learn the practical differences, when to use each, and a clear decision framework for beginners in 2026.",
+    category: "Career & Learning",
+    date: "2026-07-04",
+    readTime: "14 min",
+    difficulty: "Beginner",
+  },
 ];
 
 export function getArticleMetaList(): ArticleMeta[] {
@@ -324,8 +333,13 @@ const searchItems: SearchItem[] = [
     category: "Career & Learning",
     keywords: ["ai jobs", "ai career", "ai career roadmap", "ai jobs 2026", "ai salary", "ai careers non technical", "ai bridger", "ai builder", "ai job market"],
   },
+  {
+    label: "RAG vs Fine-Tuning Guide 2026",
+    href: "/articles/rag-vs-fine-tuning-2026",
+    category: "Career & Learning",
+    keywords: ["rag vs fine tuning", "rag tutorial", "fine tuning guide", "learn rag", "rag beginner", "rag decision guide", "retrieval augmented generation", "qlora fine tuning"],
+  },
 ];
-
 const codingRoadmaps: CodingRoadmap[] = [
   {
     title: "Zero to Developer",
