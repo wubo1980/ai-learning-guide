@@ -19,7 +19,7 @@ const jetBrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://learn-ai-guide.vercel.app/"),
+  metadataBase: new URL("https://learn-ai-guide.vercel.app"),
   title: {
     default: "AI Learning Guide",
     template: "%s | AI Learning Guide",

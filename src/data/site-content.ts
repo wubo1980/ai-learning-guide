@@ -139,7 +139,7 @@ const articleMetaList: ArticleMeta[] = [
   {
     slug: "best-free-ai-courses-2026",
     title: "Best Free AI Courses in 2026 — A Complete Guide to Learning Without Spending a Dollar",
-    description: "Discover the best free AI courses in 2026. Compare Coursera, DeepLearning.AI, Fast.ai, Google, and Stanford offerings. Start learning AI today at zero cost. For more context, the <a href="https://www.coursera.org/">Coursera online courses</a> or <a href="https://www.deeplearning.ai/">DeepLearning.AI</a> or <a href="https://github.com/">GitHub project repositories</a> have comprehensive resources on this topic.",
+    description: "Discover the best free AI courses in 2026. Compare Coursera, DeepLearning.AI, Fast.ai, Google, and Stanford offerings. Start learning AI today at zero cost.",
     category: "Career & Learning",
     date: "2026-06-28",
     readTime: "14 min",
