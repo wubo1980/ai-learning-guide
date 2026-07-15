@@ -25,7 +25,7 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <SiteShell>
-      <PageHero title={article.title} asideBody={article.description} />
+      <PageHero title={article.title} description={article.description} asideBody={article.description} />
       <section aria-label="Article content" className="page-stack">
         <SectionCard>
           <div className="section-card__header">
