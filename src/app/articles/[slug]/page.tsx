@@ -7,6 +7,12 @@ import { articlesData } from "@/data/article-content";
 
 type Props = { params: Promise<{ slug: string }> };
 
+export async function generateStaticParams() {
+  return (articlesData as any[]).map((article: any) => ({
+    slug: article.slug,
+  }));
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const article = articlesData.find((a: any) => a.slug === slug);
