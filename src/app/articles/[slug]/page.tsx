@@ -3,19 +3,20 @@ import { notFound } from "next/navigation";
 import { SiteShell } from "@/components/layout/SiteShell";
 import { PageHero } from "@/components/shared/PageHero";
 import { SectionCard } from "@/components/shared/SectionCard";
-import { articlesData } from "@/data/article-content";
+import { getArticleBySlug, getAllArticles } from "@/data/content-reader";
 
 type Props = { params: Promise<{ slug: string }> };
 
 export async function generateStaticParams() {
-  return (articlesData as any[]).map((article: any) => ({
+  const articles = await getAllArticles();
+  return articles.map((article: any) => ({
     slug: article.slug,
   }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const article = articlesData.find((a: any) => a.slug === slug);
+  const article = await getArticleBySlug(slug);
   if (!article) return {};
   return {
     title: article.title,
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function ArticlePage({ params }: Props) {
   const { slug } = await params;
-  const article = articlesData.find((a: any) => a.slug === slug);
+  const article = await getArticleBySlug(slug);
   if (!article) notFound();
 
   return (
